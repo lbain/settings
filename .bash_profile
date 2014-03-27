@@ -8,7 +8,7 @@ parse_git_branch() {
 }
 export PS1="\W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-source ./.profile
-source ./.git-completion.bash
+source /Users/lucy/Documents/code/personal/settings/.profile
+source /Users/lucy/Documents/code/personal/settings/.git-completion.bash
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
