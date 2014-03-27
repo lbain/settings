@@ -1,0 +1,10 @@
+[user]
+	name = Lucy Bain
+	email = lucybain@gmail.com
+[alias]
+	s = status
+	cm = commit
+	co = checkout
+[push]
+	default = current
+
