@@ -1,12 +1,16 @@
-alias personal="cd /Users/lucy/Documents/code/personal/"
-alias work="cd /Users/lucy/Documents/code/work/"
+for dir_path in /Users/lucy/Documents/code/work/*/ ; do
+  dir_name=$(basename $dir_path)
+  alias $dir_name="cd $dir_path"
+done
 
 alias core="cd /Users/lucy/Documents/code/work/splitit-core"
+alias sq="cd /Users/lucy/Documents/code/work/splitit-core-services"
 alias crm="cd /Users/lucy/Documents/code/work/splitit-core-crm"
 alias lm="cd /Users/lucy/Documents/code/work/lm-app"
-alias robie="cd /Users/lucy/Documents/code/work/robie"
 alias rbg="cd /Users/lucy/Documents/code/work/robie-gem"
 
+alias personal="cd /Users/lucy/Documents/code/personal/"
+alias work="cd /Users/lucy/Documents/code/work/"
 alias start="mongod run --config /usr/local/etc/mongod.conf"
 alias yoga="cd /Users/lucy/Documents/code/personal/yoga-timing/ && ruby training.rb"
 alias hideDesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
