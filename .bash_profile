@@ -1,3 +1,11 @@
+# names=("Lucy Bain")
+# for name in "${names[@]}"
+# do
+#   echo $name
+#   git log --shortstat --author "${name}" --since "1 month ago" | grep "files changed" | awk '{files+=$1; inserted+=$4; deleted+=$6} END {print "files changed", files, "lines inserted:", inserted, "lines deleted:", deleted}'
+#   echo
+# done
+
 for dir_path in /Users/lucy/Documents/code/work/*/ ; do
   dir_name=$(basename $dir_path)
   alias $dir_name="cd $dir_path"
